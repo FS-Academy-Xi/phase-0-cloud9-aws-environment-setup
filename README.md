@@ -18,10 +18,11 @@ to complete and store your Flatiron School coding work in your browser.
 ## Important Notices
 
 The AWS Cloud9 IDE shoud only be used as a temporary environment solution. Later
-portions of our course content require you to have a local environment. The principal
-value of using the Cloud9 IDE is that it will allow you to maintain pace with
-your cohort while working on the early course content. We recommend that you
-continue to try and get your own local environment set up during this time.
+portions of our course content require you to have a local environment. The Cloud9 IDE
+will allow you to focus on the early course content and maintaining a good pace rather
+than being totally blocked due to environment setup issues. We recommend that you
+continue to try and get your own local environment set up as you work through your
+lessons and assignments.
 
 Using the Cloud9 IDE requires a credit card and may incur charges from AWS if
 used for an extended period of time. If you are a new AWS customer, you will
@@ -31,38 +32,15 @@ use per month. Although we don't expect you to hit this limit (750 hours divided
 by 30 days is 25 hours per day), [AWS provides an example of what pricing might
 look like][aws pricing], should you hit a limit.
 
-## Getting Started
-
-Before we start setting up Cloud9, you will need both a [GitHub][] account and
-[Flatiron School][] account. You will also need to connect your GitHub account
-with your Flatiron School account. To do this, go to the [Flatiron School][]
-website, click on your avatar in the upper right corner of the page, then click
-**Manage Account**. You can also access this page using the direct URL,
-[https://learn.co/account](https://learn.co/account).
-
-<img src="https://curriculum-content.s3.amazonaws.com/environment-setup/learn-co-manage-account-menu.png" height="200px">
-
-Once you are on the **Account Management** page, click **Connected Apps**.
-
-<img src="https://curriculum-content.s3.amazonaws.com/environment-setup/learn-co-connect-apps-nav-button.png" height="50px">
-
-
-From here, click the **Connect Account** button to connect your GitHub Account.
-
-If connected successfully, your browser will redirect you to the [Flatiron
-School][] landing page. If you head back to the [Connected Apps][] you will see
-your GitHub account name is displayed.
-
 ## Setting Up Your AWS Account
 
-With your Flatiron School and GitHub accounts set up, the next step is to sign
-up for your AWS Account and get access to the Cloud9 IDE. Got to
-[https://aws.amazon.com/cloud9/][cloud9] and click **Get Started with AWS
-Cloud9**.
+The first step in accessing the Cloud9 IDE set up is to sign up for your AWS Account.
+Go to [https://aws.amazon.com/cloud9/][cloud9] and click **Get
+Started with AWS Cloud9**.
 
 ![cloud9 get started button](https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-get-started-button.png)
 
-You will first need to set up an AWS account. Fill out the required account and
+To continue, you will need to set up an AWS account. Fill out the required account and
 credit card billing information. Once you have set up your account, head back to
 theh [cloud9 landing page][cloud9] and click **Sign in to the Console** in the
 upper right.
@@ -144,39 +122,45 @@ configuration for this course.
 
 ## Configure the Cloud9 IDE
 
-For the first part of this course, we need to install two tools, also known as
-Ruby gems. The first gem is `learn-co`, Flatiron School's tool for testing and
-submitting work. To install, type the following into the terminal:
+For some of the content in this course, we'll need to install tools known as
+Ruby gems. These gems will help set up and test assignments you'll be working on.
+The only gem we need to install right now is `bundler`. `bundler` will actually help
+us in later lessons by installing _other_ gems we'll need.
 
-```sh
-gem install learn-co
-```
-
-The terminal will indicate several items are being installed.
-
-![learn-co gem installing](https://curriculum-content.s3.amazonaws.com/environment-setup/learn-co-gem-install.png)
-
-When finished, it will display `24 gems installed`.
-
-![learn-co gem install success](https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-learn-gem-install.png)
-
-The second gem we need to install is `bunder`. To install, type the following
-into the terminal:
+To install `bundler`, type the following into the terminal:
 
 ```sh
 gem install bundler
 ```
 
-Similar to the `learn-co` gem, you will see a message `1 gem installed` once
-the installation is complete.
+You should see a message `1 gem installed` once the installation is complete. 
 
-## Configure Git and GitHub
+## Setting up a GitHub Account
 
-Git is the tool that we’ll use to download and upload the work that we do in
-labs and lessons. To use Git without signing in every time, you can create a
-Secure Shell (SSH) key and associate that to your GitHub account. Lastly, you
-will want to run a few commands to make sure that when you use Git, you get the
-proper credit for your work. This step will ask you to do work both in your
+Before we go any further, you will need a [GitHub][] account. GitHub
+will be necessary for working on lessons and assignments during the
+program.
+
+### Action Item
+
+1. Open the [GitHub signup webpage][] at https://github.com/join
+2. Fill out the form and create your account
+3. Verify the email address connected to your GitHub account
+
+[GitHub signup webpage]: https://github.com/join
+
+## Configure Git
+
+Now that you have a GitHub account, it is time to configure Git. Git is a
+command-line tool that will allow us to access content stored on GitHub, including
+the lessons and assignments in this course. Git will also allow us to upload
+work that _you_ do. 
+
+Git should already be installed on your Cloud9 IDE. However, at the moment, you will
+be prompted to enter your GitHub account info every time you want to upload work.
+
+To use Git without signing in every time, we will go through the process of creating a Secure Shell (SSH) key and
+associating that to your GitHub account. The following steps will ask you to do work both in your
 browser and your terminal.
 
 ## Action Items
@@ -211,80 +195,10 @@ browser and your terminal.
 
 If you see your new SSH key beneath the "SSH keys" heading, continue below.
 
-## Connect Your GitHub Account to your Flatiron School Portal Account
-
-Flatiron School has some helpful tools for you when working on your labs and
-lessons through GitHub. For those tools to work, you will need to connect your
-Flatiron School Portal account to your GitHub account.
-
-### Action Item
-
-1. Open the [Flatiron School Student Portal webpage][]
-   (https://portal.flatironschool.com) _(Note: you need to be logged in to
-   Flatiron School Student Portal.)_
-2. Click on "Course" in the navigation bar at the top of the screen
-3. Click the blue "Switch Materials" button in the dropdown
-4. Click on the course that you are about to start
-5. Open the [GitHub Account Management webpage][] (https://learn.co/account/github)
-   _(Note: you may be asked to log in. Use your Flatiron School Student Portal
-   username and password here.)_
-   <!-- Note: this domain is not the Portal because of Canvas flows -->
-6. Connect your GitHub account to your Flatiron School Portal account
-
-[Flatiron School Student Portal webpage]: https://portal.flatironschool.com
-[GitHub Account Management webpage]: https://learn.co/account/github
-
-### Check Your Work
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mIzuVjiNre4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-If you go back to the [GitHub Account Management webpage][]
-(https://portal.flatironschool.com/account/github) and see a red "Disconnect"
-button, continue below.
-
-[GitHub Account Management webpage]: https://portal.flatironschool.com/account/github
-
-## Configure the learn-co gem on Cloud9
-
-The learn-co gem is the tool that we’ll be using to test and submit the labs and
-lessons that we’re working on. Before you can use it, you will need to connect
-your Flatiron School Portal account to the copy of the learn-co gem on your
-computer. This step will ask you to do work both in your browser and your
-terminal.
-
-### Action Item
-
-1. Click on the terminal in the Cloud9 IDE
-2. Type `touch ~/.netrc && chmod 0600 ~/.netrc` and press `<Enter>` _(Note: you may be asked to enter your password.)_
-3. Type `learn whoami` and press `<Enter>` _(Note: don’t type anything here yet.)_
-4. Go to your [Public Profile Management webpage][]
-   (https://portal.flatironschool.com/account/profile) in your browser _(Note:
-   if you’re not logged in, you will need to log in again.)_
-5. Look for the "Username" heading and copy your username, but do not copy the
-   text `https://learn.co/`
-6. Go to your Flatiron School Student Portal Profile page
-   ("https://portal.flatironschool.com/" + your username)
-7.  Scroll all the way to the bottom of the page to the heading "The information
-    below is sensitive and unique to your account. Only you can view this
-    information." with a red background.
-8.  Copy the string of characters under the "OAuth token" header
-9.  Paste the string of characters into the terminal and press `<Enter>`
-
-[Public Profile Management webpage]: https://portal.flatironschool.com/account/profile
-
-### Check Your Work
-
-<figure>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/1eX_lwNfPCA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <figcaption>Although this shows a local environment, your Cloud9 terminal should respond to the same commands seen in the video</figcaption>
-</figure>
-
-If you see a message with your name, username, and email, you should be all set.
-
 ## Conclusion
 
 You've completed your Cloud9 environment setup and first assignment! You are now
-set to complete assignments in this first phase of the course. Equipped with
+set to complete assignments in this first phase of this course. Equipped with
 this knowledge, you are now ready to tackle greater challenges!
 
 ## Resources
