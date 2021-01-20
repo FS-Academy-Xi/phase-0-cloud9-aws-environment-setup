@@ -78,7 +78,6 @@ Leave the default options - **Amazon Linux** and **After 30 minutes**. Click
 **Next Step** to move on.
 
 ![cloud9 platform and cost savings options](https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-platform-and-cost-savings.png)
-)
 
 On the final page, you will have a chance to review your settings.
 
