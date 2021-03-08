@@ -4,8 +4,12 @@
 
 The following instructions are for setting up AWS Cloud9, a cloud-based
 Integrated Development Environment. These instructions are provided as an
-alternative to setting up a local environment on your personal computer. If you
-have not attempted to set up your local environment, we recommend trying to do
+alternative to setting up a local environment on your personal computer. 
+
+> **Note:** If you successfully configured your Mac or Windows computer in the
+> previous modules, you do not need to set up the AWS Cloud9 Environment
+
+If you have not attempted to set up your local environment, we recommend trying to do
 so now before continuing:
 
 - [MacOS Environment Instructions](https://github.com/learn-co-curriculum/environment-mac-os-catalina-setup)
