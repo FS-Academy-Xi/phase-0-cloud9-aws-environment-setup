@@ -12,12 +12,12 @@ alternative to setting up a local environment on your personal computer.
 If you have not attempted to set up your local environment, we recommend trying to do
 so now before continuing:
 
-- [MacOS Environment Instructions](https://github.com/learn-co-curriculum/environment-mac-os-catalina-setup)
-- [Windows 10 WSL2 Environment Instructions](https://github.com/learn-co-curriculum/wsl2)
+- [MacOS Environment Instructions](https://github.com/FS-Academy-Xi/environment-mac-os-catalina-setup)
+- [Windows 10 WSL2 Environment Instructions](https://github.com/FS-Academy-Xi/wsl2)
 
 If you attempted the instructions for your operating system but ran into issues
 with setup, AWS Cloud9 can serve as a temporary environment and will allow you
-to complete and store your Flatiron School coding work in your browser.
+to complete and store your Academy Xi coding work in your browser.
 
 ## Important Notices
 
@@ -206,7 +206,6 @@ this knowledge, you are now ready to tackle greater challenges!
 
 ## Resources
 
-- [Flatiron School][]
 - [GitHub][]
 - [AWS Cloud9][cloud9]
 
@@ -214,5 +213,4 @@ this knowledge, you are now ready to tackle greater challenges!
 [aws pricing]: https://aws.amazon.com/cloud9/pricing/
 [Connected Apps]: https://portal.flatironschool.com/account/github
 [GitHub]: https://github.com/
-[Flatiron School]: https://portal.flatironschool.com/
 [cloud9]: https://aws.amazon.com/cloud9/
